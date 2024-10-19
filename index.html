@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análise de Código</title>
+    <title>Analisador de Código</title>
     <style>
         body {
+            background-color: #2c2c2c;
+            /* Cor de fundo escura */
+            color: #ffffff;
+            /* Cor do texto */
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
             text-align: center;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        h1 {
+            font-size: 3em;
+            /* Aumenta o tamanho do título */
+            margin-bottom: 20px;
+        }
+
         textarea {
-            width: 100%;
+            width: 80%;
             height: 200px;
-            padding: 10px;
-            margin-top: 10px;
-            font-family: monospace;
-            font-size: 14px;
+            margin-top: 20px;
         }
+
         button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
             cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #218838;
+            background-color: #007BFF;
+            /* Cor do botão */
+            border: none;
+            color: white;
+            border-radius: 5px;
         }
     </style>
 </head>
+
 <body>
-    <h1>Análise de Código</h1>
+    <h1>Analisador de Código</h1>
     <form action="/analyze" method="post">
-        <label for="code">Cole o seu código aqui:</label>
-        <textarea id="code" name="code" placeholder="Digite ou cole o código para análise..."></textarea>
-        <button type="submit">Enviar para Análise</button>
+        <textarea name="code" placeholder="Cole seu código aqui..."></textarea>
+        <br>
+        <button type="submit">Analisar</button>
     </form>
 </body>
+
 </html>
